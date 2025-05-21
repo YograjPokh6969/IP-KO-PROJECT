@@ -1,0 +1,108 @@
+.dashboard-header {
+  margin-bottom: 30px;
+}
+
+.dashboard-date {
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.dashboard-date .icon {
+  margin-right: 6px;
+  color: var(--primary-color);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.stat-card {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.stat-icon {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  font-size: 3rem;
+  opacity: 0.1;
+  color: var(--primary-color);
+}
+
+.stat-icon.warning {
+  color: var(--accent-color);
+}
+
+.stat-icon.success {
+  color: var(--success-color);
+}
+
+.vehicle-card {
+  height: 100%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.vehicle-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.vehicle-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.vehicle-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+  color: var(--text-primary);
+}
+
+.vehicle-reg {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--primary-color);
+  margin-bottom: 5px;
+}
+
+.vehicle-type {
+  color: var(--text-secondary);
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+}
+
+.vehicle-payment-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid var(--border-color);
+}
+
+.info-label {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+}
+
+.info-value {
+  font-weight: 500;
+  margin: 0;
+} 

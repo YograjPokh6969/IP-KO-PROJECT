@@ -1,0 +1,64 @@
+/* Bank Transfer Modal Styles */
+.bank-details-card {
+  border: none;
+  box-shadow: none;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.modal-content {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.modal-header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.modal-title {
+  color: #343a40;
+  font-weight: 600;
+}
+
+.bank-details-table {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.bank-details-table td {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #f1f3f5;
+}
+
+.bank-details-table td:first-child {
+  color: #6c757d;
+  width: 40%;
+}
+
+.bank-details-table td:last-child {
+  font-weight: 500;
+  color: #212529;
+}
+
+.bank-details-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Responsive styles for the bank details modal */
+@media (max-width: 576px) {
+  .bank-details-table td {
+    display: block;
+    width: 100%;
+  }
+  
+  .bank-details-table td:first-child {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+  
+  .bank-details-table td:last-child {
+    padding-top: 0.25rem;
+  }
+} 

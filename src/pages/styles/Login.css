@@ -1,0 +1,102 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  border: none;
+}
+
+.login-title {
+  color: #0d6efd;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.login-subtitle {
+  color: #6c757d;
+}
+
+.login-tabs .nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  border-radius: 4px;
+  margin-right: 10px;
+  color: var(--text-secondary);
+  background-color: var(--background-light);
+  font-weight: 500;
+}
+
+.login-tabs .nav-link.active {
+  color: white;
+  background-color: var(--primary-color);
+}
+
+.tab-icon {
+  margin-right: 8px;
+  font-size: 1.1rem;
+}
+
+.form-label {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.form-control {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.2rem rgba(26, 115, 232, 0.1);
+}
+
+.btn-primary {
+  padding: 12px;
+  font-weight: 500;
+}
+
+.demo-accounts {
+  max-width: 500px;
+  width: 100%;
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.account-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.account-item {
+  background-color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border-left: 3px solid #0d6efd;
+}
+
+@media (max-width: 576px) {
+  .login-card {
+    box-shadow: none;
+  }
+  
+  .login-container {
+    padding: 10px;
+  }
+} 

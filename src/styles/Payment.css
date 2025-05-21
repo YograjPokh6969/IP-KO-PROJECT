@@ -1,0 +1,131 @@
+.payment-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px;
+  background-color: #f8f9fa;
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #e4ecfb 100%);
+}
+
+.back-link {
+  align-self: flex-start;
+  color: #495057;
+  text-decoration: none;
+  font-weight: 500;
+  margin-bottom: 15px;
+  transition: color 0.2s ease;
+}
+
+.back-link:hover {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.payment-card {
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.payment-card .card-body {
+  padding: 30px;
+}
+
+.payment-title {
+  color: #2c3e50;
+  font-weight: 600;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.payment-info {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #dee2e6;
+  margin-bottom: 25px;
+}
+
+.payment-info h4 {
+  color: #0056b3;
+  font-weight: 600;
+}
+
+.success-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  background-color: #28a745;
+  color: white;
+  font-size: 3rem;
+  border-radius: 50%;
+}
+
+/* Form styling */
+.form-label {
+  font-weight: 500;
+  color: #495057;
+}
+
+.form-control {
+  height: 50px;
+  border-radius: 8px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 1px solid #ced4da;
+  transition: all 0.2s ease;
+}
+
+.form-control:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Card number input formatting */
+input[type="text"] {
+  letter-spacing: 1px;
+}
+
+/* Payment button */
+.payment-button {
+  height: 50px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  background: linear-gradient(145deg, #007bff, #0056b3);
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  margin-top: 10px;
+}
+
+.payment-button:hover:not(:disabled) {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+}
+
+.payment-button:active:not(:disabled) {
+  transform: translateY(-1px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .payment-card {
+    margin: 0;
+  }
+  
+  .payment-card .card-body {
+    padding: 20px;
+  }
+  
+  .payment-container {
+    padding: 15px;
+  }
+} 

@@ -1,0 +1,241 @@
+.register-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  padding: 0 1rem;
+  margin-bottom: 3rem;
+}
+
+.register-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(32, 156, 255, 0.15), 0 1.5px 8px 0 rgba(32, 156, 255, 0.08);
+  max-width: 420px;
+  margin: 2rem auto;
+  padding: 2.5rem 2rem 2rem 2rem;
+  border: 1.5px solid #e3f0fc;
+}
+
+.register-title {
+  color: #1a4fa3;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  background: none;
+  -webkit-text-fill-color: initial;
+}
+
+.register-subtitle {
+  color: #6c757d;
+  text-align: center;
+  margin-bottom: 2rem;
+  background: none;
+}
+
+.register-card .form-label {
+  color: #1a4fa3;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+}
+
+.register-card .form-control {
+  border-radius: 12px;
+  border: 1.5px solid #e3f0fc;
+  background: #f7fbff;
+  color: #1a4fa3;
+  font-size: 1rem;
+  padding: 0.85rem 1rem;
+  margin-bottom: 0.25rem;
+  box-shadow: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.register-card .form-control:focus {
+  border-color: #209cff;
+  background: #fff;
+  box-shadow: 0 0 0 2px #e3f0fc;
+  outline: none;
+}
+
+.register-card .form-control.is-invalid {
+  border-color: #ff4d4f;
+  background: #fff0f0;
+}
+
+.register-card .invalid-feedback {
+  color: #ff4d4f;
+  font-size: 0.92rem;
+  margin-bottom: 0.5rem;
+  margin-top: -0.2rem;
+}
+
+.register-card .form-check-input {
+  border-radius: 4px;
+  border: 1.5px solid #e3f0fc;
+  width: 1.1rem;
+  height: 1.1rem;
+  margin-top: 0.2rem;
+}
+
+.register-card .form-check-input:checked {
+  background-color: #209cff;
+  border-color: #209cff;
+}
+
+.register-card .form-check-label {
+  color: #1a4fa3;
+  font-size: 0.97rem;
+}
+
+.register-card a {
+  color: #209cff;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.register-card a:hover {
+  color: #1a4fa3;
+}
+
+.register-button {
+  background: linear-gradient(90deg, #209cff 0%, #68e0cf 100%);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 0.85rem 0;
+  margin-top: 1.2rem;
+  box-shadow: 0 4px 16px rgba(32, 156, 255, 0.12);
+  transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+}
+
+.register-button:hover {
+  background: linear-gradient(90deg, #1a4fa3 0%, #209cff 100%);
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 8px 24px rgba(32, 156, 255, 0.18);
+}
+
+.register-button:active {
+  background: #209cff;
+  transform: none;
+}
+
+/* Remove card header gradient for this style */
+.register-header {
+  background: none;
+  color: #1a4fa3;
+  padding: 0;
+  border-radius: 0;
+  text-align: center;
+}
+
+/* Section titles */
+.form-section-title {
+  color: #1a4fa3;
+  font-size: 1.08rem;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+  border-bottom: 1px solid #e3f0fc;
+  padding-bottom: 0.3rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+  .register-card {
+    padding: 1.2rem 0.5rem;
+    max-width: 98vw;
+  }
+  .register-title {
+    font-size: 1.3rem;
+  }
+}
+
+/* Icon styling */
+.fa-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: #0056b3;
+}
+
+/* Input group styling */
+.register-card .input-group-text {
+  background-color: #f0f4f8;
+  border-color: #ddd;
+  color: #0056b3;
+  width: 45px;
+  justify-content: center;
+}
+
+.register-card .input-group {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+  border-radius: 6px;
+}
+
+/* Special styling for the address textarea */
+.register-card .address-textarea {
+  height: auto !important;
+  min-height: 80px !important;
+  border-radius: 8px !important;
+  resize: none;
+}
+
+/* Alert styling */
+.register-card .alert {
+  border-radius: 6px;
+  font-size: 0.9rem;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.5rem;
+  border: none;
+  background-color: #f8d7da;
+  color: #721c24;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.form-section {
+  margin-bottom: 1.5rem;
+}
+
+/* Updated register button */
+.register-button {
+  padding: 0.75rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  background: linear-gradient(to right, #0056b3, #3c8dbc);
+  border: none;
+  transition: all 0.3s ease;
+  height: 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  letter-spacing: 0.5px;
+}
+
+.register-button:hover {
+  background: linear-gradient(to right, #004494, #3179a6);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.register-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Revert input centering and max-width for grid layout */
+/* Removed the following block:
+.register-card input[type="text"],
+.register-card input[type="password"],
+.register-card input[type="email"],
+.register-card input[type="tel"] {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+*/ 
